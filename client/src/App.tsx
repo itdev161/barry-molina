@@ -4,7 +4,6 @@ import axios from 'axios';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Register from './components/Register/Register';
 import Login from './components/Login/Login';
-import { isAssertionExpression } from 'typescript';
 
 class App extends React.Component {
   state = {
