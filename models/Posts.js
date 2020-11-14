@@ -1,0 +1,24 @@
+import mongoose from 'mongoose';
+
+const PostSchema = new mongoose.Schema({
+    user: {
+        type: 'ObjectId',
+        ref:'User'
+    },
+    title: {
+        type: String,
+        required: true
+    },
+    body: {
+        type: String,
+        required: true
+    },
+    date: {
+        type: String,
+        required: true
+    },
+});
+
+const Post = mongoose.Model('post', PostSchema);
+
+export default Post;
